@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio</title>
+  <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="aos-master/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="60">
+
+<!-- Navbar Section -->
+<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">My Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-center">
+        <li class="nav-item"><a class="nav-link active" href="#home" tabindex="1">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about" tabindex="2">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills" tabindex="3">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects" tabindex="4">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact" tabindex="5">Contact</a></li>
+        <li class="nav-item ms-lg-2">
+          <button id="modeToggle" class="btn btn-outline-secondary px-3" aria-label="Toggle light or dark mode" tabindex="6">Dark Mode</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Home Section -->
+<section style="background-image: url(image/t3.jpg); background-size: cover;" id="home" class="min-vh-100 d-flex align-items-center" data-aos="fade-up">
+  <div class="container text-center">
+    <h1 class="display-4 fw-bold">Mike Aron F. Valenton</h1>
+    <p class="intro">A Front-End Developer and Web Designer</p>
+    <a href="#contact" class="btn btn-primary btn-lg mt-3">Contact</a>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-5 bg-light" data-aos="fade-right">
+  <div class="container">
+    <h2 class="mb-4 text-center fw-bold">About Me</h2>
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center mb-4 mb-md-0">
+        <img src="school drive/First Grading/profile.jfif" alt="About Me Photo" class="rounded-circle shadow img-fluid about-photo" />
+      </div>
+      <div class="col-md-6">
+        <p class="lead">
+          Hi, I'm Mike Aron F. Valenton, a first-year student at the University of Baguio. I create websites with a focus on clean design and functionality.
+        </p>
+        <p>
+          Skilled in HTML, CSS, JavaScript, Bootstrap, and animation libraries. I enjoy learning new technologies and improving user experiences.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="py-5" data-aos="fade-left">
+  <div class="container">
+    <h2 class="mb-4 text-center fw-bold">Skills</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div>
+          <div class="d-flex align-items-center gap-2">
+            <img src="image/languages/html.png" alt="HTML5" width="30">
+            <h5 class="mb-0">HTML5</h5>
+          </div>
+          <div class="progress shadow-sm mt-2">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" style="width: 69%">69%</div>
+          </div>
+        </div>
+        <div class="mt-3">
+          <div class="d-flex align-items-center gap-2">
+            <img src="image/languages/css3.png" alt="CSS3" width="30">
+            <h5 class="mb-0">CSS3</h5>
+          </div>
+          <div class="progress shadow-sm mt-2">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width: 79%">79%</div>
+          </div>
+        </div>
+        <div class="mt-3">
+          <div class="d-flex align-items-center gap-2">
+            <img src="image/languages/js.png" alt="JavaScript" width="30">
+            <h5 class="mb-0">JavaScript</h5>
+          </div>
+          <div class="progress shadow-sm mt-2">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 69%">69%</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div>
+          <div class="d-flex align-items-center gap-2">
+            <img src="image/languages/bt.png" alt="Bootstrap" width="30">
+            <h5 class="mb-0">Bootstrap 5</h5>
+          </div>
+          <div class="progress shadow-sm mt-2">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 90%">90%</div>
+          </div>
+        </div>
+        <div class="mt-3">
+          <div class="d-flex align-items-center gap-2">
+            <img src="image/languages/aos.png" alt="AOS" width="30">
+            <h5 class="mb-0">AOS Animations</h5>
+          </div>
+          <div class="progress shadow-sm mt-2">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 80%">80%</div>
+          </div>
+        </div>
+        <div class="mt-3">
+          <div class="d-flex align-items-center gap-2">
+            <img src="image/languages/react.png" alt="React" width="30">
+            <h5 class="mb-0">React (Bonus)</h5>
+          </div>
+          <div class="progress shadow-sm mt-2">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" role="progressbar" style="width: 70%">70%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="py-5" data-aos="fade-left">
+<div class="timeline-container py-5 bg-light" data-aos="fade-right">
+  <h2 id="grading-phase" class="text-center">Preliminary Projects</h2>
+  <div class="timeline-scroller">
+    <!-- Preliminary -->
+    <div class="timeline-phase" data-phase="preliminary">
+      <div class="project-card">
+        <h3>1. Personal Profile Page</h3>
+        <iframe src="school drive/First Grading/LabExercise1A.html" sandbox="allow-scripts allow-same-origin"></iframe>
+        <p>A simple personal information webpage displaying details such as age, education background, awards, and skills.</p>
+        <a href="school drive/First Grading/LabExercise1A.html" class="btn btn-primary mt-2" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>2. Polynomial Expressions Guide</h3>
+        <iframe src="school drive/First Grading/LabExercise2A.html" sandbox="allow-scripts allow-same-origin"></iframe>
+        <p>An educational page showcasing different types of polynomial expressions (monomial, binomial, trinomial, polynomial) with examples.</p>
+        <a href="school drive/First Grading/LabExercise2A.html" class="btn btn-primary mt-2" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>3. Winter Camping Safety Guide</h3>
+        <iframe src="school drive/First Grading/LabExercise3A.html" sandbox="allow-scripts allow-same-origin"></iframe>
+        <p>A list outlining topics for a winter camping safety course.</p>
+        <a href="school drive/First Grading/LabExercise3A.html" class="btn btn-primary mt-2" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>4. Solar System Exploration</h3>
+        <iframe src="school drive/First Grading/LabExercise4A.html" sandbox="allow-scripts allow-same-origin"></iframe>
+        <p>An informative article about the solar system, with hyperlinks to NASA resources.</p>
+        <a href="school drive/First Grading/LabExercise4A.html" class="btn btn-primary mt-2" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>5. Basic Class Schedule Table</h3>
+        <iframe src="school drive/First Grading/LabExercise5A.html" sandbox="allow-scripts allow-same-origin"></iframe>
+        <p>A static table displaying a weekly class schedule with subjects, times, days, and rooms.</p>
+        <a href="school drive/First Grading/LabExercise5A.html" class="btn btn-primary mt-2" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>6. Weekly Schedule</h3>
+        <iframe src="school drive/First Grading/LabExercise6A.html" sandbox="allow-scripts allow-same-origin"></iframe>
+        <p>Color-coded weekly schedule grid with class blocks.</p>
+        <a href="school drive/First Grading/LabExercise6A.html" class="btn btn-primary mt-2" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>7. Activity Compilation Hub</h3>
+        <iframe src="school drive/First Grading/LabExercise7A.html" sandbox="allow-scripts allow-same-origin"></iframe>
+        <p>Showcases all lab exercises created that garding.</p>
+        <a href="school drive/First Grading/LabExercise7A.html" class="btn btn-primary mt-2" target="_blank">View Project</a>
+      </div>
+    </div>
+    <!-- Midterms -->
+    <div class="timeline-phase" data-phase="midterms">
+      <div class="project-card">
+        <h3>1. Floating Polynomial Guide</h3>
+        <iframe src="school drive/Midterms/ExerciseCSS1.html" sandbox="allow-scripts allow-same-origin"></iframe>
+        <p>A polished version of the polynomial expressions guide using CSS.</p>
+        <a href="school drive/Midterms/ExerciseCSS1.html" class="btn btn-primary mt-2" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>2. Framed Winter Camping Guide</h3>
+        <iframe src="school drive/Midterms/ExerciseCSS2.html" sandbox="allow-scripts allow-same-origin"></iframe>
+        <p> A redesigned winter camping safety guide enclosed in a purple-themed frame with rounded corners.</p>
+        <a href="school drive/Midterms/ExerciseCSS2.html" class="btn btn-primary mt-2" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>3. Styled Class Schedule Table</h3>
+        <iframe src="school drive/Midterms/ExerciseCSS2b.html" sandbox="allow-scripts allow-same-origin"></iframe>
+        <p>Improved original with better spacing, borders, and visual hierarchy.</p>
+        <a href="school drive/Midterms/ExerciseCSS2b.html" class="btn btn-primary mt-2" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>4. Solar System Article</h3>
+        <iframe src="school drive/Midterms/ExerciseCSS3.html" sandbox="allow-scripts allow-same-origin"></iframe>
+        <p>Applying different kinds of CSS elements.</p>
+        <a href="school drive/Midterms/ExerciseCSS3.html" class="btn btn-primary mt-2" target="_blank">View Project</a>
+      </div>
+    </div>
+    <!-- Finals -->
+    <div class="timeline-phase" data-phase="finals">
+      <div class="project-card">
+        <h3>1. Stylish Calculator App</h3>
+        <iframe src="school drive/Finals/ExerciseJS1_FINALS.html" sandbox="allow-scripts allow-same-origin"></iframe>
+        <p>A fully functional calculator with a modern UI. Performs addition, subtraction, multiplication, and division.</p>
+        <a href="school drive/Finals/ExerciseJS1_FINALS.html" class="btn btn-primary mt-2" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>2. Odd/Even & Prime Number Checker</h3>
+        <iframe src="school drive/Finals/Activity2.html" sandbox="allow-scripts allow-same-origin"></iframe>
+        <p>A JavaScript program that checks if a user-input number is odd/even and determines if it's prime or composite.</p>
+        <a href="school drive/Finals/Activity2.html" class="btn btn-primary mt-2" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>3. Kilometer to Centimeter Converter</h3>
+        <iframe src="school drive/Finals/Activity3.html" sandbox="allow-scripts allow-same-origin"></iframe>
+        <p>A simple converter that multiplies a user-input kilometer value by 1,000,000 to output centimeters.</p>
+        <a href="school drive/Finals/Activity3.html" class="btn btn-primary mt-2" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>4. Dynamic Table Generator</h3>
+        <iframe src="school drive/Finals/Activity4.html" sandbox="allow-scripts allow-same-origin"></iframe>
+        <p>JavaScript program intended to create a table based on user-specified rows/columns.</p>
+        <a href="school drive/Finals/Activity4.html" class="btn btn-primary mt-2" target="_blank">View Project</a>
+      </div>
+  </div>
+  <div class="scroll-indicator">← Scroll →</div>
+</div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5" data-aos="fade-up">
+  <div class="container">
+    <h2 class="mb-4 text-center fw-bold">Contact Me</h2>
+    <form id="contactForm" novalidate class="mx-auto" style="max-width: 600px;">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name <span class="text-danger">*</span></label>
+        <input type="text" class="form-control" id="name" required aria-required="true" />
+        <div class="invalid-feedback">Please enter your name.</div>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+        <input type="email" class="form-control" id="email" required aria-required="true" />
+        <div class="invalid-feedback">Please enter a valid email address.</div>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+        <textarea class="form-control" id="message" rows="5" required aria-required="true"></textarea>
+        <div class="invalid-feedback">Please enter your message.</div>
+      </div>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+      <div id="formMessage" class="mt-3 visually-hidden" role="alert"></div>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-4 mt-5">
+  <div class="container text-center">
+    <small>&copy; 2025 Valenton Mike Aron</small>
+  </div>
+</footer>
+
+<!-- Back to Top Button -->
+<a href="#top" id="backToTop"><img src="image/Dr.png" alt="Back to Top"></a>
+
+<!-- Scripts -->
+<script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+<script src="aos-master/dist/aos.js"></script>
+<script src="js/scripts.js"></script>
+<!-- aos -->
+<script>
+  AOS.init({
+    duration: 800,
+    easing: 'ease-in-out',
+    once: true,
+  });
+</script>
+</body>
+</html>

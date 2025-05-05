@@ -1,0 +1,346 @@
+body {
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: sans-serif;
+}
+
+section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.navbar-light {
+    background-color: white !important;
+}
+
+p.intro {
+  letter-spacing: 0.35cm ;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  margin: 10px 0;
+}
+
+
+.about-photo {
+    max-width: 300px;
+    border: 3px solid #252525;
+}
+
+.progress {
+    height: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 0 8px rgb(0 0 0 / 0.1) inset;
+}
+.progress-bar {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+
+/* Timeline */
+.timeline-container {
+  max-width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+}
+#grading-phase {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: inherit;
+}
+.timeline-scroller {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 30px;
+  padding: 0 20px 20px;
+  -webkit-overflow-scrolling: touch;
+}
+.timeline-phase {
+  display: flex;
+  gap: 30px;
+  scroll-snap-align: start;
+  min-width: 200%;
+}
+
+/* Title animation styles */
+#grading-phase {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  background: linear-gradient(50deg, #000000, #ffffff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  position: relative;
+}
+
+/* Animation for title change */
+#grading-phase.change {
+  animation: fadeInOut 0.5s ease;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  padding: 25px;
+  width: 380px;
+  min-height: 450px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+.project-card iframe {
+  flex-grow: 1;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  margin: 15px 0;
+  background: white;
+}
+.project-card h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+.project-card p {
+  color: #666;
+  margin-bottom: 15px;
+}
+.scroll-indicator {
+  text-align: center;
+  color: #666;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+  
+
+/* Button Styles */
+.btn-primary {
+    background-color: #0069d9;
+    border-color: #0062cc;
+    box-shadow: 0 4px 12px rgba(9, 52, 179, 0.4);
+    transition: all 0.3s ease;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(9, 52, 179, 0.6);
+}
+
+/* Progress Bar Colors */
+.progress-bar.bg-primary { background-color: #ec711e!important; }
+.progress-bar.bg-info { background-color: #1742b8!important; }
+.progress-bar.bg-warning { background-color: #ffc107!important; }
+.progress-bar.bg-danger { background-color: #710f97!important; }
+.progress-bar.bg-success { background-color: #28a745!important; }
+
+/* Home Section */
+#home h1, #home .lead.text-muted { 
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.685);
+}
+
+/* BackToTop */
+#backToTop {
+    position: fixed;
+    bottom: 40px;
+    right: 50px;
+    display: none;
+    z-index: 999;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+#backToTop img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+#backToTop:hover {
+    transform: translateY(-5px);
+    background-color: #0069d9;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode .navbar-light {
+    background-color: #1f1f1f !important;
+}
+
+body.dark-mode .navbar-light .navbar-brand,
+body.dark-mode .navbar-light .nav-link {
+    color: #bbb;
+}
+
+body.dark-mode .navbar-light .nav-link.active,
+body.dark-mode .navbar-light .nav-link:hover,
+body.dark-mode .navbar-light .nav-link:focus {
+    color: #fff;
+}
+
+body.dark-mode section.bg-light {
+    background-color: #222 !important;
+}
+
+body.dark-mode footer {
+    background-color: #1c1c1c;
+}
+
+
+body.dark-mode .form-control {
+    background-color: #333;
+    border-color: #555;
+    color: #eee;
+}
+
+body.dark-mode .form-control:focus {
+    background-color: #444;
+    border-color: #1a73e8;
+    color: #fff;
+}
+
+body.dark-mode #projects {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .timeline-container {
+  background-color: #222 !important;
+}
+
+body.dark-mode .timeline-phase {
+  background-color: #2d2d2d;
+}
+
+body.dark-mode .project-card {
+  background-color: #2d2d2d;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  color: #aaa;
+}
+
+body.dark-mode .project-card h3 {
+  color: #eee;
+}
+
+body.dark-mode .project-card p {
+  color: #aaa;
+}
+
+body.dark-mode .scroll-indicator {
+  color: #bbb;
+}
+
+body.dark-mode .btn-primary {
+  background-color: #1a73e8;
+  border-color: #1a73e8;
+}
+
+body.dark-mode .btn-primary:hover {
+  background-color: #0d5bba;
+  border-color: #0d5bba;
+}
+
+body.dark-mode iframe {
+  border: 1px solid #444;
+  background-color: #333;
+}
+
+
+
+/* Button styling for dark mode */
+body.dark-mode .btn-primary {
+  background-color: #1a73e8;
+  border-color: #1a73e8;
+}
+
+body.dark-mode .btn-primary:hover {
+  background-color: #0d5bba;
+  border-color: #0d5bba;
+}
+
+/* Iframe styling for dark mode */
+body.dark-mode iframe {
+  border: 1px solid #444;
+  background-color: #333;
+}
+
+/* Home Section Exception for Dark Mode */
+body.dark-mode #home h1,
+body.dark-mode #home .lead.text-muted {
+    color: white !important;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.685) !important;
+}
+
+body.dark-mode #home {
+    background-color: inherit !important;
+}
+
+/* Mobile Support */
+@media (max-width: 768px) {
+    section {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .timeline-phase {
+        min-width: calc(700% - 30px);
+    }
+    
+    .about-photo {
+        max-width: 200px;
+    }
+    
+    #backToTop {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    .navbar-collapse {
+        background: white;
+        padding: 1rem;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+    
+    body.dark-mode .navbar-collapse {
+        background: #1f1f1f;
+    }
+}
