@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Act4</title>
+</head>
+<body>
+    <button onclick="getResult();">Enter Row and Column</button><br>
+    <table id="table"></table>
+<body>
+    <script type = "text/javascript">
+        function getResult(){
+            let rows = prompt("Rows: ");
+            let columns = prompt("Columns: ");
+            
+            for (let i = 1; i <= rows; i++){
+                document.write('<tr>');
+                for(let j = 1; j <= columns; j++){
+                    table += ( i + j ) + " ";
+                }
+                table += "<br>"
+            }
+        }
+    
+        </script>
+    
+</body>
+</html>

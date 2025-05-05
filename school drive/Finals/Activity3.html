@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Act3</title>
+    <script type = "text/javascript">
+    function convert(){
+        var num = parseFloat(document.getElementById("input").value);
+        var result = document.getElementById('result');
+        var Convert = num * 1000000;
+        result1.innerHTML = num + " Kilometer is: " + Convert + "cm";
+    }
+    </script>
+    <body>
+        <input type="number" id="input" placeholder="Kilometer to cm">
+    <button onclick="convert();">Submit</button><br>
+
+    <div id = "result1"></div>
+</body>
+</html>

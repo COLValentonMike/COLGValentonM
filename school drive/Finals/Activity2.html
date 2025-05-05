@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Act2</title>
+</head>
+<script type="text/javascript">
+    function getResult(){
+        let num = parseFloat(document.getElementById("input").value);
+        let result1 = document.getElementById('result1');
+        let result2 = document.getElementById('result2');
+
+        if (num % 2 == 0){
+        result1.innerHTML = "is Even";}
+        else{
+        result1.innerHTML = "is ODD";}
+        if(num <= 0){
+        result2.innerHTML = "Is Invalid";}
+        else{
+            var count = 0;
+            for (var i=1 ; i <= num; i++){
+                if(num % 1 == 0){
+                count++}
+                if(count <=2){
+                    result2.innerHTML = "PRIME";}
+                     else{
+                         result2.innerHTML = "COMPONENT";}
+            }
+        }
+            
+    }
+</script>
+<body>
+
+<input type="number" id="input" placeholder="Odd or Even Calculator">
+<button onclick = "getResult();">Submit</button><br>
+
+<div id = "result1"></div>
+<div id = "result2"></div>
+</body>
+</html>
